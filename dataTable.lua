@@ -1,0 +1,1 @@
+-- read csv file and store in a table
