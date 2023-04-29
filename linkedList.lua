@@ -65,21 +65,16 @@ function linkedList:sortList()
     end
 end
 
--- create linked list
+-- main
 local list = linkedList.new()
-
--- add nodes to linked list
 for i = 1, 10 do
-    list:addNode(math.random(1, 100))
+    list:addNode(math.random(0, 100))
 end
 
--- print unsorted list
 print("Unsorted List:")
 list:printList()
 
--- sort list
-list:sortList()
 
--- print sorted list
-print("Sorted List:")
-list:printList()
+list:sortList()
+print("\nSorted List:")
+list:printList();
